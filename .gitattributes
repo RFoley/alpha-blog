@@ -1,0 +1,25 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# \force EVERYTHING to use LF because WINDOWS
+*.* text eol=lf
+
+#
+# The above will handle all files NOT found below
+#
+
+# Documents
+*.md text
+*.csv text
+*.sql text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.ico binary
+*.svg binary
+*.eps binary
