@@ -8,8 +8,6 @@
   <tr>
     <th>Title</th>
     <th>Description</th>
-    <th>Show</th>
-    <th>Edit</th>
   </tr>
 
   <% @articles.each do |article| %>
@@ -18,6 +16,7 @@
       <td><%= article.description %></td>
       <td><%= link_to 'Show', article_path(article.id) %></td>
       <td><%= link_to 'Edit', edit_article_path(article.id) %></td>
+      <td><%= link_to 'Delete', article_path(article.id), method: :delete, data: {confirm: 'Are you sure you want to delete this article?'} %></td>
     </tr>
   <% end %>
 </table>
