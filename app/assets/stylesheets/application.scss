@@ -1,0 +1,90 @@
+/*
+Light Colour scheme:
+  #A7D2CB, Clean
+  #F2D388, Butter
+  #C98474, Salmon
+  #874C62, Eggplant
+*/
+
+/*
+Dark Colour scheme:
+  #E14658, Coral
+  #22252C, Navy
+  #3F3250, Mountain
+  #C0B3A0, Scrub
+*/
+
+// Background color
+.navbar-custom {
+  background-color: #A7D2CB;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset_url('banner_concert.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron h1 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  color: #000000;
+  background-color: #F2D388;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #A7D2CB;
+  color: #874C62;
+}
+
+footer a {
+  color: #000000;
+}
+
+footer a:hover {
+  color: #874C62;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
