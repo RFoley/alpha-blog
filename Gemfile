@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
+# Reason to get a mac (or linux box) #7: Windows users will need to install
+# mingw-w64 and manually compile the bcrypt gem
 gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
@@ -37,6 +39,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Reason to get a mac (or linux box) #15: everything on the following line after
+  # "gem 'byebug'", because f**king Rails Development on Windows lmao
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
