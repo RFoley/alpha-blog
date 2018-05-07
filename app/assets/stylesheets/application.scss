@@ -64,6 +64,16 @@ Dark Colour scheme:
   padding-bottom: 15px;
 }
 
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
+.listing li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
