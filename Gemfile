@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Reason to get a mac (or linux box) #7: Windows users will need to install
 # mingw-w64 and manually compile the bcrypt gem
 gem 'bcrypt', '~> 3.1.7'
+# Pagination
+gem 'will_paginate', '~> 3.1.6'
+gem 'will_paginate-bootstrap4', '~> 0.2.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
