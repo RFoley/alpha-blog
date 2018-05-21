@@ -2,7 +2,7 @@ class User < ApplicationRecord
   # Why use complex regex when you can use confirmation emails?
   VALID_EMAIL_REGEX = /.+@.+\..+/i
 
-  has_many :articles
+  has_many :articles, dependent: :destroy
 
   before_save { self.email = email.downcase }
 
