@@ -49,7 +49,7 @@ class ArticlesController < ApplicationController
   end
 
   def require_same_user
-    unless current_user == @article.user || @article.user.admin?
+    unless current_user == @article.user || current_user.admin?
       flash[:danger] = 'Access denied: You can only edit or delete your own articles'
       redirect_to root_path
     end
