@@ -17,3 +17,20 @@
 /yarn-error.log
 
 .byebug_history
+
+/.idea/
+/.yardoc
+/_yardoc/
+/coverage/
+/bin/
+/doc/
+/exe/
+/pkg/
+/spec/reports/
+/tmp/
+Gemfile.lock
+.travis.yml
+/test/
+/Rakefile
+*.gem
+
